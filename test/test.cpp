@@ -35,15 +35,6 @@
 #include <math.h>   // for abs
 #include "figtree.h"
 
-#ifdef WIN32
-  // Link to figtree.dll if WIN32.  If not, then we assume that 
-  // libfigtree.so or libfigtree.a are linked to from the Makefile.
-  // The locations of figtree.dll and ann_figtree_version.dll must either be 
-  // in the PATH environment variable, or in the same location from which 
-  // sample.exe is is executed.
-  #pragma comment(lib,"../lib/figtree.lib")
-#endif
-
 // This program runs all figtree methods with different parameters and tests
 // whether the maximum absolute error is below epsilon.
 

@@ -36,15 +36,6 @@
 #include <math.h>   // for abs
 #include "figtree.h"
 
-#ifdef WIN32
-  // Link to figtree.dll if WIN32.  If not, then we assume that 
-  // libfigtree.so or libfigtree.a are linked to from the Makefile.
-  // The locations of figtree.dll and ANN.dll must either be in the PATH
-  // environment variable, or in the same location from which sample.exe is
-  // is executed.
-  #pragma comment(lib,"../lib/figtree.lib")
-#endif
-
 // This file only shows examples of how the figtree() function can be used.
 //
 // See source code of figtree() in figtree.cpp for sample code of how 
