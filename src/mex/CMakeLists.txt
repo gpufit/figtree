@@ -19,6 +19,7 @@ set_target_properties( mexFigtree
 		PREFIX ""
 		SUFFIX .${Matlab_MEX_EXTENSION}
 		RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}"
+        OUTPUT_NAME "figtree"
 )
 
 target_include_directories(mexFigtree PRIVATE
@@ -44,6 +45,7 @@ set_target_properties( mexFigtreeChooseEvaluationMethod
 		PREFIX ""
 		SUFFIX .${Matlab_MEX_EXTENSION}
 		RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}"
+        OUTPUT_NAME "figtreeChooseEvaluationMethod"
 )
 
 target_include_directories(mexFigtreeChooseEvaluationMethod PRIVATE
@@ -69,6 +71,7 @@ set_target_properties( mexFigtreeKCenterClustering
 		PREFIX ""
 		SUFFIX .${Matlab_MEX_EXTENSION}
 		RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}"
+        OUTPUT_NAME "figtreeKCenterClustering"
 )
 
 target_include_directories(mexFigtreeKCenterClustering PRIVATE
