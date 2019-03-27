@@ -14,6 +14,8 @@ add_library(mexFigtree SHARED
     ../../include/figtree.h
     ../KCenterClustering.h)
 
+add_dependencies(mexFigtree figtree)
+
 set_target_properties( mexFigtree
 	PROPERTIES
 		PREFIX ""
@@ -40,6 +42,8 @@ add_library(mexFigtreeChooseEvaluationMethod SHARED
     ../../include/figtree.h
     ../KCenterClustering.h)
 
+add_dependencies(mexFigtreeChooseEvaluationMethod figtree)
+
 set_target_properties( mexFigtreeChooseEvaluationMethod
 	PROPERTIES
 		PREFIX ""
@@ -65,6 +69,8 @@ add_library(mexFigtreeKCenterClustering SHARED
     ../KCenterClustering.cpp
     ../../include/figtree.h
     ../KCenterClustering.h)
+    
+add_dependencies(mexFigtreeKCenterClustering figtree)
     
 set_target_properties( mexFigtreeKCenterClustering
 	PROPERTIES
